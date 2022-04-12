@@ -34,11 +34,15 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   fontSize: 24,
                   color: primaryTextColor),
+              headline5: TextStyle(
+                  fontFamily: defaultFontFamily,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  color: primaryTextColor),
               bodyText2: TextStyle(
-                fontFamily: defaultFontFamily,
-                color: secondaryTextColor,
-                fontWeight: FontWeight.w400
-              ))),
+                  fontFamily: defaultFontFamily,
+                  color: secondaryTextColor,
+                  fontWeight: FontWeight.w500))),
       home: const HomePage(),
     );
   }

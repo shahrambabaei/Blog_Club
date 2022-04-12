@@ -1,4 +1,5 @@
 import 'package:blog_club/widgets/categorylist.dart';
+import 'package:blog_club/widgets/postlist.dart';
 import 'package:blog_club/widgets/storylist.dart';
 
 import 'package:flutter/material.dart';
@@ -11,7 +12,9 @@ class HomePage extends StatelessWidget {
     ThemeData _themeData = Theme.of(context);
     return SafeArea(
         child: Scaffold(
-      body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            body: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Padding(
           padding: const EdgeInsets.fromLTRB(30, 16, 30, 0),
           child:
@@ -32,8 +35,10 @@ class HomePage extends StatelessWidget {
         ),
         const StoryList(),
         Container(
-            margin: const EdgeInsets.only(top: 25), child: const CategoryList())
+            margin: const EdgeInsets.only(top: 25),
+            child: const CategoryList()),
+        PostList()
       ]),
-    ));
+    )));
   }
 }
