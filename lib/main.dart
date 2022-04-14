@@ -20,6 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           textTheme: const TextTheme(
+              caption: TextStyle(
+                  fontFamily: defaultFontFamily,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff7B8BB2),
+                  fontSize: 10),
               subtitle1: TextStyle(
                   color: secondaryTextColor,
                   fontFamily: defaultFontFamily,

@@ -1,5 +1,6 @@
 import 'package:blog_club/widgets/categorylist.dart';
 import 'package:blog_club/widgets/postlist.dart';
+import 'package:blog_club/widgets/shared/bottomnavigation.dart';
 import 'package:blog_club/widgets/storylist.dart';
 
 import 'package:flutter/material.dart';
@@ -39,6 +40,8 @@ class HomePage extends StatelessWidget {
             child: const CategoryList()),
         PostList()
       ]),
-    )));
+    ),
+    bottomNavigationBar: BottomNavigation(),
+    ));
   }
 }
