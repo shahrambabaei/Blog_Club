@@ -1,4 +1,7 @@
+import 'package:blog_club/gen/assets.gen.dart';
+import 'package:blog_club/gen/fonts.gen.dart';
 import 'package:blog_club/pages/homepage.dart';
+import 'package:blog_club/pages/splashpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,34 +24,33 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           textTheme: const TextTheme(
               caption: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff7B8BB2),
                   fontSize: 10),
               subtitle1: TextStyle(
                   color: secondaryTextColor,
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.w300,
                   fontSize: 18),
               headline6: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: primaryTextColor,
-                  fontFamily: defaultFontFamily),
+                  fontFamily: FontFamily.avenir),
               headline4: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.w700,
                   fontSize: 24,
                   color: primaryTextColor),
               headline5: TextStyle(
-                  fontFamily: defaultFontFamily,
-                  fontSize: 20,
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.w700,
                   color: primaryTextColor),
               bodyText2: TextStyle(
-                  fontFamily: defaultFontFamily,
+                  fontFamily: FontFamily.avenir,
                   color: secondaryTextColor,
                   fontWeight: FontWeight.w500))),
-      home: const HomePage(),
+      home: const SplashPage(),
     );
   }
 }
