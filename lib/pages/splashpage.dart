@@ -1,5 +1,6 @@
 import 'package:blog_club/gen/assets.gen.dart';
 import 'package:blog_club/pages/homepage.dart';
+import 'package:blog_club/pages/onboardingpage.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
@@ -11,14 +12,16 @@ class SplashPage extends StatefulWidget {
 
 class _SplashPageState extends State<SplashPage> {
   @override
-  Future<void> initState() async =>
-      Future.delayed(const Duration(seconds: 3)).then((value) {
-        Navigator.pushReplacement(
+  void initState() {
+    Future.delayed(const Duration(seconds: 3))
+        .then((value) => Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => const HomePage(),
-            ));
-      });
+              builder: (context) => const OnBoardingPage(),
+            )));
+
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {

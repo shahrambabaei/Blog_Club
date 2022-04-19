@@ -16,12 +16,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    const Color primaryColor = Color(0xff376AED);
     const Color primaryTextColor = Color(0xff0D253C);
     const Color secondaryTextColor = Color(0xff2D4379);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+          colorScheme: const ColorScheme.light(
+              primary: primaryColor,
+              onPrimary: Colors.white,
+              onSurface: primaryTextColor,
+              background: Color(0xffFBFCFF),
+              surface: Colors.white,
+              onBackground: primaryTextColor),
           textTheme: const TextTheme(
               caption: TextStyle(
                   fontFamily: FontFamily.avenir,
