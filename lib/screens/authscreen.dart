@@ -1,17 +1,17 @@
 import 'package:blog_club/gen/assets.gen.dart';
 import 'package:blog_club/widgets/login.dart';
-import 'package:blog_club/widgets/shared/passwordformfield.dart';
+import 'package:blog_club/widgets/passwordformfield.dart';
 import 'package:blog_club/widgets/signup.dart';
 import 'package:flutter/material.dart';
 
-class AuthPage extends StatefulWidget {
-  const AuthPage({Key? key}) : super(key: key);
+class AuthScreen extends StatefulWidget {
+  const AuthScreen({Key? key}) : super(key: key);
 
   @override
-  State<AuthPage> createState() => _AuthPageState();
+  State<AuthScreen> createState() => _AuthScreenState();
 }
 
-class _AuthPageState extends State<AuthPage> {
+class _AuthScreenState extends State<AuthScreen> {
   late ThemeData _themeData;
   late TextStyle tabTextStyle;
   static const int tabLogin = 0;

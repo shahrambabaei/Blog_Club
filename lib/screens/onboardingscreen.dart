@@ -1,17 +1,17 @@
 import 'package:blog_club/data.dart';
 import 'package:blog_club/gen/assets.gen.dart';
-import 'package:blog_club/pages/homepage.dart';
+import 'package:blog_club/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class OnBoardingPage extends StatefulWidget {
-  const OnBoardingPage({Key? key}) : super(key: key);
+class OnBoardingScreen extends StatefulWidget {
+  const OnBoardingScreen({Key? key}) : super(key: key);
 
   @override
-  State<OnBoardingPage> createState() => _OnBoardingPageState();
+  State<OnBoardingScreen> createState() => _OnBoardingScreenState();
 }
 
-class _OnBoardingPageState extends State<OnBoardingPage> {
+class _OnBoardingScreenState extends State<OnBoardingScreen> {
   int _page = 0;
   late ThemeData _themeData;
   final PageController _pageController = PageController();
@@ -77,7 +77,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => const HomePage(),
+                                  builder: (context) => const HomeScreen(),
                                 ));
                           } else {
                             _pageController.animateToPage(_page + 1,

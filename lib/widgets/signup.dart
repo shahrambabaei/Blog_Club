@@ -1,5 +1,5 @@
 import 'package:blog_club/gen/assets.gen.dart';
-import 'package:blog_club/widgets/shared/passwordformfield.dart';
+import 'package:blog_club/widgets/passwordformfield.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {

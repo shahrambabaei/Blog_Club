@@ -46,6 +46,10 @@ class $AssetsImagesIconsGen {
   AssetGenImage get articles =>
       const AssetGenImage('assets/images/icons/Articles.png');
 
+  /// File path: assets/images/icons/ArticlesActive.png
+  AssetGenImage get articlesActive =>
+      const AssetGenImage('assets/images/icons/ArticlesActive.png');
+
   /// File path: assets/images/icons/Facebook.png
   AssetGenImage get facebook =>
       const AssetGenImage('assets/images/icons/Facebook.png');
@@ -54,8 +58,15 @@ class $AssetsImagesIconsGen {
   AssetGenImage get google =>
       const AssetGenImage('assets/images/icons/Google.png');
 
+  /// File path: assets/images/icons/Grid.svg
+  SvgGenImage get grid => const SvgGenImage('assets/images/icons/Grid.svg');
+
   /// File path: assets/images/icons/Home.png
   AssetGenImage get home => const AssetGenImage('assets/images/icons/Home.png');
+
+  /// File path: assets/images/icons/HomeActive.png
+  AssetGenImage get homeActive =>
+      const AssetGenImage('assets/images/icons/HomeActive.png');
 
   /// File path: assets/images/icons/LOGO.svg
   SvgGenImage get logo => const SvgGenImage('assets/images/icons/LOGO.svg');
@@ -63,9 +74,20 @@ class $AssetsImagesIconsGen {
   /// File path: assets/images/icons/Menu.png
   AssetGenImage get menu => const AssetGenImage('assets/images/icons/Menu.png');
 
+  /// File path: assets/images/icons/MenuActive.png
+  AssetGenImage get menuActive =>
+      const AssetGenImage('assets/images/icons/MenuActive.png');
+
   /// File path: assets/images/icons/Search.png
   AssetGenImage get search =>
       const AssetGenImage('assets/images/icons/Search.png');
+
+  /// File path: assets/images/icons/SearchActive.png
+  AssetGenImage get searchActive =>
+      const AssetGenImage('assets/images/icons/SearchActive.png');
+
+  /// File path: assets/images/icons/Table.svg
+  SvgGenImage get table => const SvgGenImage('assets/images/icons/Table.svg');
 
   /// File path: assets/images/icons/Twitter.png
   AssetGenImage get twitter =>

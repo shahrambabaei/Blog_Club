@@ -1,9 +1,5 @@
-import 'package:blog_club/gen/assets.gen.dart';
 import 'package:blog_club/gen/fonts.gen.dart';
-import 'package:blog_club/pages/articlescreen.dart';
-import 'package:blog_club/pages/authpage.dart';
-import 'package:blog_club/pages/homepage.dart';
-import 'package:blog_club/pages/splashpage.dart';
+import 'package:blog_club/mainscreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,20 +28,16 @@ class MyApp extends StatelessWidget {
               surface: Colors.white,
               onBackground: primaryTextColor),
           textTheme: const TextTheme(
-              caption: TextStyle(
-                  fontFamily: FontFamily.avenir,
-                  fontWeight: FontWeight.w700,
-                  color: Color(0xff7B8BB2),
-                  fontSize: 10),
               subtitle1: TextStyle(
-                  color: secondaryTextColor,
                   fontFamily: FontFamily.avenir,
-                  fontWeight: FontWeight.w300,
+                  color: secondaryTextColor,
+                  fontWeight: FontWeight.w200,
                   fontSize: 18),
               headline6: TextStyle(
+                  fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.bold,
-                  color: primaryTextColor,
-                  fontFamily: FontFamily.avenir),
+                  fontSize: 18,
+                  color: primaryTextColor),
               headline4: TextStyle(
                   fontFamily: FontFamily.avenir,
                   fontWeight: FontWeight.w700,
@@ -56,12 +48,21 @@ class MyApp extends StatelessWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
                   color: primaryTextColor),
+              caption: TextStyle(
+                  fontFamily: FontFamily.avenir,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xff7B8BB2),
+                  fontSize: 10),
+              subtitle2: TextStyle(
+                  fontFamily: FontFamily.avenir,
+                  color: primaryTextColor,
+                  fontWeight: FontWeight.w400,
+                  fontSize: 14),
               bodyText2: TextStyle(
                   fontFamily: FontFamily.avenir,
-                  fontSize: 16,
                   color: secondaryTextColor,
-                  fontWeight: FontWeight.w500))),
-      home: const ArticleScreen(),
+                  fontSize: 12))),
+      home: const MainScreen(),
     );
   }
 }
